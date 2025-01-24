@@ -133,7 +133,7 @@ export default function Gameplay() {
         setIsPlayerOneTurn(true);
       }
     }
-  }, [board, winner, minimax]);
+  }, [board, winner, minimax, blueberryLogo, checkWinner]);
 
   // Handle player clicks
   const handleClick = (index) => {
