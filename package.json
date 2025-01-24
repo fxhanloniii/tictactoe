@@ -1,8 +1,7 @@
 {
   "name": "tictactoe",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://clewtictactoe.netlify.app/tictactoe/"
+  "private": true
   ,
   "dependencies": {
     "cra-template": "1.2.0",
