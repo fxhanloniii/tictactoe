@@ -16,7 +16,7 @@ export default function Gameplay() {
   const [isTie, setIsTie] = useState(false);
 
   // Function to check for a winner
-  const checkWinner = (newBoard) => {
+  const checkWinner = useCallback((newBoard) => {
     const winningCombinations = [
       [0, 1, 2],
       [3, 4, 5],
@@ -27,7 +27,7 @@ export default function Gameplay() {
       [0, 4, 8],
       [2, 4, 6],
     ];
-
+  
     for (let combo of winningCombinations) {
       const [a, b, c] = combo;
       if (newBoard[a] && newBoard[a] === newBoard[b] && newBoard[a] === newBoard[c]) {
@@ -35,7 +35,7 @@ export default function Gameplay() {
       }
     }
     return null;
-  };
+  }, []);
 
   // Minimax logic for AI
   const evaluateBoard = (newBoard) => {
@@ -64,13 +64,13 @@ export default function Gameplay() {
     return null; // Game still ongoing
   };
 
-  const minimax = (newBoard, depth, isMaximizing) => {
+  const minimax = useCallback((newBoard, depth, isMaximizing) => {
     const score = evaluateBoard(newBoard);
-
+  
     if (score !== null) {
       return score - depth;
     }
-
+  
     if (isMaximizing) {
       let bestScore = -Infinity;
       for (let i = 0; i < newBoard.length; i++) {
@@ -94,7 +94,8 @@ export default function Gameplay() {
       }
       return bestScore;
     }
-  };
+  }, [evaluateBoard]);
+  
 
   // Computer's move
   const makeComputerMove = useCallback(() => {
@@ -133,7 +134,7 @@ export default function Gameplay() {
         setIsPlayerOneTurn(true);
       }
     }
-  }, [board, winner, minimax, checkWinner]);
+  }, [board, winner, minimax]);
 
   // Handle player clicks
   const handleClick = (index) => {
