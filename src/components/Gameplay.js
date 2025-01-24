@@ -38,7 +38,8 @@ export default function Gameplay() {
   }, []);
 
   // Minimax logic for AI
-  const evaluateBoard = (newBoard) => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const evaluateBoard = useCallback((newBoard) => {
     const winningCombinations = [
       [0, 1, 2],
       [3, 4, 5],
@@ -49,21 +50,21 @@ export default function Gameplay() {
       [0, 4, 8],
       [2, 4, 6],
     ];
-
+  
     for (let combo of winningCombinations) {
       const [a, b, c] = combo;
       if (newBoard[a] && newBoard[a] === newBoard[b] && newBoard[a] === newBoard[c]) {
         return newBoard[a] === blueberryLogo ? 10 : -10; // 10 for computer win, -10 for player win
       }
     }
-
+  
     if (newBoard.every((cell) => cell !== null)) {
       return 0; // Draw
     }
-
+  
     return null; // Game still ongoing
-  };
-
+  }, []);
+  
   const minimax = useCallback((newBoard, depth, isMaximizing) => {
     const score = evaluateBoard(newBoard);
   
