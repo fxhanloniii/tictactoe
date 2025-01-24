@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Layout.module.css";
-import logo from "../assets/ClewLogo.svg";
 import backgroundVideo from "../assets/clewbackground.mp4";
 
 export default function Layout({ children }) {

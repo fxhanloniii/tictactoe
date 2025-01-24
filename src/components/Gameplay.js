@@ -133,7 +133,7 @@ export default function Gameplay() {
         setIsPlayerOneTurn(true);
       }
     }
-  }, [board, winner]);
+  }, [board, winner, minimax]);
 
   // Handle player clicks
   const handleClick = (index) => {
