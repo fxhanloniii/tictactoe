@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tictactoe/static/css/main.2b04e9b4.css",
+    "main.js": "/tictactoe/static/js/main.f4ed03ed.js",
+    "static/js/488.17894297.chunk.js": "/tictactoe/static/js/488.17894297.chunk.js",
+    "static/media/clewbackground.mp4": "/tictactoe/static/media/clewbackground.06edb54715a4a30fc440.mp4",
+    "static/media/blueberry.png": "/tictactoe/static/media/blueberry.aac47d85766a8632625c.png",
+    "static/media/coolmint.png": "/tictactoe/static/media/coolmint.46d155c1a48885f5e96a.png",
+    "static/media/MortendBold.ttf": "/tictactoe/static/media/MortendBold.269913aad4c033805364.ttf",
+    "static/media/ClewLogo.svg": "/tictactoe/static/media/ClewLogo.fdc90f33c7ce7028761d8e82cc908d0c.svg",
+    "static/media/TAC.svg": "/tictactoe/static/media/TAC.506d6da74fb12e5777f9de0b158cb95e.svg",
+    "static/media/TOE.svg": "/tictactoe/static/media/TOE.0f95fe58f8f870db52f98ab1dfee5dff.svg",
+    "static/media/TIC.svg": "/tictactoe/static/media/TIC.070ee750b158c260ebde3eef48004017.svg",
+    "index.html": "/tictactoe/index.html",
+    "main.2b04e9b4.css.map": "/tictactoe/static/css/main.2b04e9b4.css.map",
+    "main.f4ed03ed.js.map": "/tictactoe/static/js/main.f4ed03ed.js.map",
+    "488.17894297.chunk.js.map": "/tictactoe/static/js/488.17894297.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b04e9b4.css",
+    "static/js/main.f4ed03ed.js"
+  ]
+}
