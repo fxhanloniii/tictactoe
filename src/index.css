@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Mortend";
+  src: url("./assets/MortendBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "Mortend", sans-serif;
+  margin: 0;
+  padding: 0;
+}

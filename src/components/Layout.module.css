@@ -1,0 +1,46 @@
+.layoutContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .logoWrapper {
+    position: absolute;
+    top: 5%; /* Adjust the spacing from the top */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1; /* Ensure it's above the video */
+  }
+  
+  .logo {
+    max-width: 20%; /* Adjust size based on screen */
+    height: auto;
+  }
+  
+  .contentOverlay {
+    position: relative;
+    z-index: 2; /* Above the logo and video */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color for content */
+  }
+  

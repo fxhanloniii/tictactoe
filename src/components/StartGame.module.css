@@ -1,0 +1,218 @@
+/* Start Screen Container */
+.startGameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 67.5rem;
+    height: 120rem;
+    flex-shrink: 0;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+  }
+  
+  /* Logo Styles */
+  .logoWrapper {
+    width: 33.75rem;
+    height: 12.625rem;
+    flex-shrink: 0;
+    margin: 2rem 0 1rem 0;
+  }
+  
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Title Container */
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+  
+  .ticSvg {
+    width: 23.375rem;
+    height: auto;
+  }
+  .tacSvg {
+    width: 28.4375rem;
+    height: auto;
+  }
+  .toeSvg {
+    width: 29.5625rem;
+    height: auto;
+  }
+  
+  /* Players Wrapper */
+  .playersWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 8rem;
+    gap: 2rem; /* Adjust spacing between players */
+  }
+  
+  /* Player Container */
+  .playerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    flex: 1; /* Allow it to flex within the wrapper */
+  }
+  
+  /* Player Card */
+  .playerCard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25.12613rem;
+    height: 25.00819rem;
+    flex-shrink: 0;
+    fill: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+    stroke-width: 4px;
+    stroke: #363D4D;
+  }
+  
+  .playerCardBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Fully responsive */
+    height: 100%;
+    /* background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+    border: 4px solid #363D4D; */
+    border-radius: 15px; /* Adjust as needed */
+    z-index: -1; /* Places it behind the content */
+  }
+  
+  /* Player Logo Container */
+.playerLogoContainer {
+    position: absolute; /* Allow positioning inside the playerCard */
+    top: -20%; /* Move it upward */
+    left: -20%; /* Move it to the left */
+    transform: translate(-10%, -10%); /* Adjust for better alignment */
+    width: 50%; /* Adjust size relative to the playerCard */
+    max-width: 15rem; /* Cap the size */
+  }
+
+  /* Player Logo */
+  .playerLogo {
+    width: 31.875rem;
+    height: 31.875rem;
+    flex-shrink: 0; /* Maintain aspect ratio */
+    /* border-radius: 50%;  */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); */
+  }
+  
+  /* Player Label */
+  .playerLabel {
+    position: absolute;
+    bottom: 1rem;
+    width: 22.375rem;
+    height: 5.625rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 4px solid #363D4D;
+    background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
+    backdrop-filter: blur(15px);
+    z-index: 2;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .playerText {
+    display: flex;
+    width: 15.5rem;
+    height: 4.0625rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #D2E4F4;
+    text-align: center;
+    font-family: Mortend;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6.31113rem; /* 265.731% */
+    line-height: normal; /* Use 'normal' for consistent centering */
+    text-transform: uppercase; /* Keep text uppercase for uniformity */
+    width: auto; /* Allow the text to shrink or grow dynamically */
+    height: auto;
+  }
+
+  .startButton {
+    display: flex; /* Ensures child elements like text align properly */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    border-radius: 1.25rem;
+    border: 4px solid #363D4D;
+    background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+    width: 54.5rem;
+    height: 12.5rem;
+    flex-shrink: 0;
+    color: #D2E4F4;
+    font-weight: 700;
+    line-height: 6.31113rem; /* 114.747% */
+    margin-top: 8rem;
+    cursor: pointer; /* Indicates it's clickable */
+    position: relative;
+    overflow: hidden; /* Ensures no content spills out */
+  }
+
+  .startText {
+    display: inline-block; /* Keeps the text as a single block */
+    color: #D2E4F4; /* Matches the button color */
+    text-align: center; /* Centers text horizontally */
+    font-family: Mortend, sans-serif;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; /* Adjust to match design */
+    margin-top: 1rem;
+  }
+  
+  /* Decorative Container */
+.decorativeContainer {
+    position: absolute; /* Positioned relative to playerCard */
+    bottom: 1rem; 
+    right: 2rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Spacing between line and circle */
+    z-index: 1; /* Ensure it's above the playerCard background */
+    background: transparent;
+  }
+  
+  /* Decorative Line */
+  .decorativeLine {
+    width: 16.75075rem; 
+    height: 16.75075rem;
+    flex-shrink: 0;
+    background: transparent;
+  }
+  
+  /* Decorative Circle */
+  .decorativeCircle {
+    width: 1.5335rem;
+    height: 1.5335rem;
+    flex-shrink: 0;
+    stroke-width: 2px;
+    stroke: #FFF;
+    position: absolute; /* Move it relative to the container */
+    top: -1.4rem; 
+    right: -0.67rem;
+  }
+  
+ 

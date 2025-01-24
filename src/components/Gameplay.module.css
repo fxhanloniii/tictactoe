@@ -1,0 +1,238 @@
+.gameplayContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 0; /* Remove unnecessary padding */
+    margin: 0;
+    position: relative; /* Ensure positioning for better centering */
+  }
+  
+  .logoWrapper {
+    width: 21.5rem;
+    height: 8.0625rem;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center; /* Center items within the grid */
+    align-content: center; /* Center items vertically within the grid */
+    margin: 0 auto; /* Ensure the grid is centered horizontally */
+  }
+  
+  .cell {
+    position: relative;
+    width: 18.75rem;
+    height: 18.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .cellBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it sits behind the icon */
+  }
+  
+  .cellIcon {
+    width: 18.75rem;
+    height: 18.75rem;
+    flex-shrink: 0;
+    height: auto;
+  }
+  
+  .winnerMessage,
+  .turnMessage {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .resetButton {
+    background-color: #2a3444;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+    backdrop-filter: blur(15px); /* Blurred background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between overlayContent and newGameButton */
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem;
+  }
+  
+  .overlayContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    
+    margin: auto; /* Center vertically */
+    max-width: 80%;
+  }
+
+  .tieLabelWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between PLAYER 1 and PLAYER 2/COMPUTER */
+    margin-bottom: 1rem;
+  }
+  
+  .labelContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Spacing between labels */
+    margin-bottom: 1rem; /* Space between labels and message */
+    width: 21.375rem;
+    height: 5.625rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 4px solid #363D4D;
+    background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
+    backdrop-filter: blur(15px);
+    position: relative;
+    top: 4rem;
+    z-index: 3;
+  }
+  
+  .label {
+    display: flex;
+    width: 15.5rem;
+    height: 4.0625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #D2E4F4;
+    text-align: center;
+    font-family: Mortend;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6.31113rem; /* 265.731% */
+  }
+  
+  .winnerMessage {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 54.5rem;
+    height: 12.5rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .winMessage {
+    border-radius: 2rem;
+    border: 4px solid #17479E;
+    background: linear-gradient(180deg, #5C90EE 0%, #17479E 100%);
+    width: 54.5rem;
+    height: 12.5rem;
+    flex-shrink: 0; 
+    color: #D2E4F4;
+    text-align: center;
+    font-family: Mortend;
+    font-size: 7.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6.31113rem; 
+    padding-top: 1rem;
+  }
+
+  .tieMessage {
+    width: 54.5rem;
+    height: 12.5rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 4px solid #363D4D;
+    background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
+    backdrop-filter: blur(15px);
+    color: #D2E4F4;
+    text-align: center;
+    font-family: Mortend;
+    font-size: 7.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6.31113rem;
+    padding-top: 1rem;
+  }
+  
+  .newGameButtonContainer {
+    width: 54.5rem;
+    height: 12.5rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 4px solid #363D4D;
+    background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    margin-bottom: 6rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow for better visibility */
+  }
+  
+  .newGameButton {
+    background: none; /* Remove any button background */
+    border: none; /* Remove button border */
+    padding: 0; 
+    cursor: pointer;
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newGameButtonText {
+    color: #D2E4F4; /* Correct text color */
+    text-align: center;
+    font-family: Mortend;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    text-shadow: none; 
+    background: none; 
+    padding-top: 1rem;
+  }
+  
