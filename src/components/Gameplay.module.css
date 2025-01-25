@@ -60,9 +60,9 @@
     height: auto;
   }
   
-  .winnerMessage,
+  
   .turnMessage {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
   }
   
@@ -272,6 +272,11 @@
       width: 5.5rem;
       height: 5.5rem;
     }
+
+    .turnMessage {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
   
     .newGameButtonContainer {
       width: 20rem;
@@ -424,6 +429,11 @@
     .cellIcon {
       width: 6.5rem;
       height: 6.5rem;
+    }
+
+    .turnMessage {
+      font-size: 1.5rem;
+      margin: 1rem 0;
     }
   
     .newGameButtonContainer {
