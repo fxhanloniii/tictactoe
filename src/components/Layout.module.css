@@ -1,3 +1,4 @@
+
 .layoutContainer {
     position: relative;
     width: 100%;
@@ -36,11 +37,14 @@
   .contentOverlay {
     position: relative;
     z-index: 2; /* Above the logo and video */
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white; /* Text color for content */
   }
+
+  
   

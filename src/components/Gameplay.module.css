@@ -86,10 +86,10 @@
     backdrop-filter: blur(15px); /* Blurred background */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space between overlayContent and newGameButton */
+    justify-content: center; /* Space between overlayContent and newGameButton */
     align-items: center;
     z-index: 1000;
-    padding: 2rem;
+    padding: 0rem;
   }
   
   .overlayContent {
@@ -102,7 +102,7 @@
     text-align: center;
     color: white;
     
-    margin: auto; /* Center vertically */
+    margin: auto; 
     max-width: 80%;
   }
 
@@ -234,5 +234,302 @@
     text-shadow: none; 
     background: none; 
     padding-top: 1rem;
+  }
+  
+
+  @media (max-width: 390px) {
+    .gameplayContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        padding: 0; /* Remove unnecessary padding */
+        margin: 0;
+        position: relative;
+    }
+  
+    .logoWrapper {
+      width: 12rem;
+      height: 4rem;
+      margin-bottom: 1rem;
+    }
+  
+    .grid {
+      gap: 0.5rem;
+    }
+  
+    .cell {
+      width: 6rem;
+      height: 6rem;
+    }
+  
+    .cellIcon {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+  
+    .newGameButtonContainer {
+      width: 20rem;
+      height: 5rem;
+      margin-bottom: 2rem;
+    }
+  
+    .newGameButtonText {
+      font-size: 1.5rem;
+    }
+    .winnerMessage {
+        font-size: 1.5rem;
+        width: 19.68056rem;
+        height: 4.51388rem;
+        flex-shrink: 0;
+        line-height: 2rem;
+        flex-shrink: 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .winMessage {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 2.93631rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.51275rem;
+        border-radius: 0.79631rem;
+        border: 1.593px solid #17479E;
+        background: linear-gradient(180deg, #5C90EE 0%, #17479E 100%); 
+        width: 21.69906rem;
+        height: 4.97688rem;
+        flex-shrink: 0;
+      }
+    
+      .tieMessage {
+        border-radius: 0.45138rem;
+        border: 1.444px solid #363D4D;
+        background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
+        backdrop-filter: blur(5.4166669845581055px);
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 2.66319rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.279rem; /* 85.574% */
+      }
+    
+      .newGameButtonContainer {
+        width: 19.68056rem;
+        height: 4.51388rem;
+        flex-shrink: 0;
+        margin-bottom: 6rem;
+        border-radius: 0.45138rem;
+        border: 1.444px solid #363D4D;
+        background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+      }
+    
+      .newGameButtonText {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 1.98613rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.279rem; /* 114.747% */
+        padding-top: 0.25rem;
+      }
+    
+      .labelContainer {
+        width: 7.71875rem;
+        height: 2.03125rem;
+        flex-shrink: 0;
+        gap: 1rem;
+        border-radius: 0.45138rem;
+        border: 1.444px solid #363D4D;
+        background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
+        backdrop-filter: blur(5.4166669845581055px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+      .label {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 0.85763rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.279rem; 
+      }
+      .overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%; /* Ensure it spans the entire screen */
+        height: 100%; /* Fill the viewport */
+        position: fixed; /* Stick it in place */
+        top: 0;
+        left: 0rem;
+        padding: 0rem; 
+      }
+      .overlayContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        border-radius: 12px;
+        text-align: center;
+        color: white;
+        margin: auto;
+        max-width: 80%;
+        
+      }
+  }
+
+  @media (max-width: 430px) and (min-width: 391px) {
+    .gameplayContainer {
+      height: auto;
+      padding: 1.5rem;
+    }
+  
+    .logoWrapper {
+      width: 14rem;
+      height: 5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .grid {
+      gap: 0.75rem;
+    }
+  
+    .cell {
+      width: 7rem;
+      height: 7rem;
+    }
+  
+    .cellIcon {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  
+    .newGameButtonContainer {
+      width: 22rem;
+      height: 6rem;
+      margin-bottom: 3rem;
+      width: 21.69906rem;
+      height: 4.97688rem;
+     flex-shrink: 0;
+      position: relative;
+      bottom: 4rem;
+      display: flex;
+     justify-content: center; /* Center the text horizontally */
+     align-items: center; /* Center the text vertically */
+     margin-bottom: 6rem;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    }
+  
+    .newGameButtonText {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 2.18981rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.51275rem; /* 114.747% */
+    }
+    .winnerMessage {
+        font-size: 2rem;
+        width: 21.69906rem;
+        height: 4.97688rem;
+        line-height: 2.5rem;
+        
+      }
+    
+      .winMessage {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 2.93631rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.51275rem;
+        border-radius: 0.79631rem;
+        border: 1.593px solid #17479E;
+        background: linear-gradient(180deg, #5C90EE 0%, #17479E 100%);
+      }
+    
+      .tieMessage {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 2.93631rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.51275rem; 
+        border-radius: 0.49769rem;
+        border: 1.593px solid #363D4D;
+        background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
+        backdrop-filter: blur(5.972222328186035px);
+      }
+    
+      .newGameButtonContainer {
+        width: 21.69906rem;
+        height: 4.97688rem;
+        flex-shrink: 0;
+        margin-bottom: 3rem;
+        border-radius: 0.49769rem;
+        border: 1.593px solid #363D4D;
+        background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+      }
+    
+      .newGameButtonText {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 2.18981rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.51275rem; /* 114.747% */
+        padding-top: 0.25rem;
+      }
+    
+      .labelContainer {
+        width: 8.51044rem;
+        height: 2.23956rem;
+        flex-shrink: 0;
+        gap: 1.25rem;
+        border-radius: 0.49769rem;
+        border: 1.593px solid #363D4D;
+        background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
+        backdrop-filter: blur(5.972222328186035px);
+      }
+    
+      .label {
+        display: flex;
+        width: 6.17131rem;
+        height: 1.6175rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 0.94563rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.51275rem; /* 265.731% */
+        padding-top: 0.25rem;
+      }
   }
   

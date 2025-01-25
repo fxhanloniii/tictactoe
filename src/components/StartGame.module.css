@@ -1,4 +1,6 @@
 /* Start Screen Container */
+
+
 .startGameContainer {
     display: flex;
     flex-direction: column;
@@ -144,17 +146,17 @@
     font-size: 2.375rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 6.31113rem; /* 265.731% */
-    line-height: normal; /* Use 'normal' for consistent centering */
-    text-transform: uppercase; /* Keep text uppercase for uniformity */
-    width: auto; /* Allow the text to shrink or grow dynamically */
+    line-height: 6.31113rem; 
+    line-height: normal; 
+    text-transform: uppercase; 
+    width: auto; 
     height: auto;
   }
 
   .startButton {
-    display: flex; /* Ensures child elements like text align properly */
-    justify-content: center; /* Centers text horizontally */
-    align-items: center; /* Centers text vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     border-radius: 1.25rem;
     border: 4px solid #363D4D;
     background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
@@ -163,11 +165,11 @@
     flex-shrink: 0;
     color: #D2E4F4;
     font-weight: 700;
-    line-height: 6.31113rem; /* 114.747% */
+    line-height: 6.31113rem; 
     margin-top: 8rem;
-    cursor: pointer; /* Indicates it's clickable */
+    cursor: pointer; 
     position: relative;
-    overflow: hidden; /* Ensures no content spills out */
+    overflow: hidden; 
   }
 
   .startText {
@@ -215,4 +217,359 @@
     right: -0.67rem;
   }
   
- 
+
+/* Media Query for iPhone 12/13/14 (390x844) */
+@media (max-width: 390px) {
+    /* Start Screen Container */
+    .startGameContainer {
+      width: 100%; 
+      height: auto; 
+      padding: 1rem; 
+    }
+  
+    /* Logo Styles */
+    .logoWrapper {
+        width: 12.1875rem;
+        height: 4.559rem;
+        flex-shrink: 0;
+        /* position: absolute;
+        top: -4rem; */
+    }
+  
+    .logo {
+      width: 100%; 
+      height: auto; 
+    }
+  
+    /* Title Container */
+    .titleContainer {
+      gap: 0.5rem; 
+      margin-top: 0rem;
+      width: 10.67538rem;
+      height: 9.11806rem;
+      flex-shrink: 0;
+      /* position: relative;
+      top: 0rem; */
+    }
+  
+    /* .ticSvg,
+    .tacSvg,
+    .toeSvg {
+      width: 100%;
+      height: auto; 
+    } */
+
+    .ticSvg {
+        width: 8.44rem;
+        height: auto;
+    }
+    .tacSvg {
+        width: 10.26rem;
+        height: auto;
+    }
+    .toeSvg {
+        width: 10.67rem;
+        height: auto;
+    }
+  
+    /* Players Wrapper */
+    .playersWrapper {
+      flex-direction: row;  
+      margin-top: 4rem; 
+      gap: 1rem; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border: 1px red solid; */
+    }
+  
+    /* Player Container */
+    .playerContainer {
+      margin: 0.5rem;
+      width: 11.51044rem;
+      height: 11.51338rem;
+      flex-shrink: 0;
+    }
+  
+    /* Player Card */
+    .playerCard {
+        width: 9.07331rem;
+        height: 9.03075rem;
+        flex-shrink: 0;
+    }
+  
+    .playerCardBackground {
+      border-radius: 10px; 
+    }
+  
+    /* Player Logo Container */
+    .playerLogoContainer {
+      top: -15%; 
+      left: -15%; 
+      width: 11.51044rem;
+      height: 11.51044rem;
+      flex-shrink: 0;
+    }
+  
+    /* Player Logo */
+    .playerLogo {
+      width: 100%; 
+      height: auto; 
+    }
+  
+    /* Player Label */
+    .playerLabel {
+        width: 7.71875rem;
+        height: 2.03125rem;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 0.45138rem;
+        border: 1.444px solid #363D4D;
+        background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
+        backdrop-filter: blur(5.416666507720947px);
+        position: absolute;
+        bottom: 0rem;
+        right: 0.5rem;
+    }
+  
+    .playerText {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 0.85763rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.279rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 0.25rem;
+    }
+  
+    /* Start Button */
+    .startButton {
+        width: 19.68056rem;
+        height: 4.51388rem;
+        flex-shrink: 0;
+        border-radius: 0.45138rem;
+    border: 1.444px solid #363D4D;
+    background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+    }
+  
+    .startText {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 1.98613rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.279rem; /* 114.747% */
+      margin-top: 0.5rem; /* Adjust margin */
+    }
+  
+    /* Decorative Container */
+    .decorativeContainer {
+      bottom: 0.5rem; /* Adjust positioning */
+      right: 1rem; /* Adjust positioning */
+    }
+  
+    /* Decorative Line */
+    .decorativeLine {
+        width: 6.04888rem;
+        height: 6.04888rem;
+        flex-shrink: 0;
+    }
+  
+    /* Decorative Circle */
+    .decorativeCircle {
+      width: 0.55375rem;
+      height: 0.55375rem;
+      flex-shrink: 0;
+      top: -0.5rem; 
+      right: -0.25rem;
+    }
+  }
+  
+
+/* Media Query for iPhone 12/13/14 (430x932) */
+@media (max-width: 430px) and (min-width: 391px) {
+    /* Start Screen Container */
+    .startGameContainer {
+      width: 100%; 
+      height: auto; 
+      padding: 1rem; 
+    }
+  
+    /* Logo Styles */
+    .logoWrapper {
+        width: 13.4375rem;
+        height: 5.02663rem;
+        flex-shrink: 0;
+        /* position: absolute;
+        top: -4rem; */
+    }
+  
+    .logo {
+      width: 100%; 
+      height: auto; 
+    }
+  
+    /* Title Container */
+    .titleContainer {
+      gap: 0.5rem; 
+      margin-top: 0rem;
+      width: 11.77025rem;
+      height: auto;
+      flex-shrink: 0;
+      /* position: relative;
+      top: 0rem; */
+    }
+  
+    /* .ticSvg,
+    .tacSvg,
+    .toeSvg {
+      width: 100%;
+      height: auto; 
+    } */
+
+    .ticSvg {
+        width: 9.306rem;
+        height: auto;
+    }
+    .tacSvg {
+        width: 11.322rem;
+        height: auto;
+    }
+    .toeSvg {
+        width: 11.77rem;
+        height: auto;
+    }
+  
+    /* Players Wrapper */
+    .playersWrapper {
+      flex-direction: row;  
+      margin-top: 4rem; 
+      gap: 1rem; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border: 1px red solid; */
+      width: 24.28706rem;
+    }
+  
+    /* Player Container */
+    .playerContainer {
+      margin: 0.5rem;
+      width: 12.691rem;
+      height: 12.69425rem;
+      flex-shrink: 0;
+    }
+  
+    /* Player Card */
+    .playerCard {
+        width: 10.00394rem;
+        height: 9.95694rem;
+        flex-shrink: 0;
+    }
+  
+    .playerCardBackground {
+      border-radius: 10px; 
+    }
+  
+    /* Player Logo Container */
+    .playerLogoContainer {
+      top: -15%; 
+      left: -15%; 
+      width: 12.691rem;
+      height: 12.691rem;
+      flex-shrink: 0;
+    }
+  
+    /* Player Logo */
+    .playerLogo {
+      width: 100%; 
+      height: auto; 
+    }
+  
+    /* Player Label */
+    .playerLabel {
+        width: 8.51044rem;
+        height: 2.23956rem;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 0.49769rem;
+        border: 1.593px solid #363D4D;
+        background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
+        backdrop-filter: blur(5.972222328186035px);
+        position: absolute;
+        bottom: 0rem;
+        right: 0.5rem;
+    }
+  
+    .playerText {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 0.94563rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.51275rem; /* 265.731% */
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 0.25rem;
+    }
+  
+    /* Start Button */
+    .startButton {
+        width: 21.69906rem;
+        height: 4.97688rem;
+        flex-shrink: 0;
+        border-radius: 0.49769rem;
+        border: 1.593px solid #363D4D;
+        background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+    }
+  
+    .startText {
+        color: #D2E4F4;
+        text-align: center;
+        font-family: Mortend;
+        font-size: 2.18981rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.51275rem; 
+        margin-top: 0.5rem; 
+    }
+  
+    /* Decorative Container */
+    .decorativeContainer {
+      bottom: 0.5rem; /* Adjust positioning */
+      right: 1rem; /* Adjust positioning */
+    }
+  
+    /* Decorative Line */
+    .decorativeLine {
+        width: 6.66931rem;
+        height: 6.66931rem;
+        flex-shrink: 0;
+        stroke-width: 0.796px;
+        stroke: #FFF;
+    }
+  
+    /* Decorative Circle */
+    .decorativeCircle {
+        width: 0.61056rem;
+        height: 0.61056rem;
+        flex-shrink: 0;
+        top: -0.5rem; 
+        right: -0.25rem;
+    }
+  }

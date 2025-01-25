@@ -4,6 +4,7 @@ import backgroundVideo from "../assets/clewbackground.mp4";
 
 export default function Layout({ children }) {
   return (
+    <div className={styles.wrapper}>
     <div className={styles.layoutContainer}>
       {/* Background Video */}
       <video autoPlay loop muted className={styles.backgroundVideo}>
@@ -14,7 +15,8 @@ export default function Layout({ children }) {
       
 
       {/* Content Overlay */}
-      <div className={styles.contentOverlay}>{children}</div>
+      <div className={styles.contentOverlay} >{children}</div>
+    </div>
     </div>
   );
 }
