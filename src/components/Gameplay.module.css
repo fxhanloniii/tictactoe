@@ -360,7 +360,7 @@
         flex-direction: column;
         justify-content: center;
         position: relative;
-        top: 3rem;
+        top: 3.5rem;
       }
     
       .label {
@@ -452,7 +452,6 @@
         line-height: 2.51275rem; /* 114.747% */
     }
     .winnerMessage {
-        font-size: 2rem;
         width: 21.69906rem;
         height: 4.97688rem;
         line-height: 2.5rem;
@@ -519,7 +518,7 @@
         background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
         backdrop-filter: blur(5.972222328186035px);
         position: relative;
-        top: 3rem;
+        top: 3.5rem;
       }
     
       .label {
