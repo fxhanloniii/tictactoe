@@ -333,6 +333,7 @@
         border-radius: 0.45138rem;
         border: 1.444px solid #363D4D;
         background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+        margin-bottom: 9rem;
       }
     
       .newGameButtonText {
@@ -358,6 +359,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative;
+        top: 3rem;
       }
     
       .label {
@@ -491,6 +494,8 @@
         border-radius: 0.49769rem;
         border: 1.593px solid #363D4D;
         background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+        margin-top: 0rem;
+        margin-bottom: 10rem;
       }
     
       .newGameButtonText {
@@ -513,6 +518,8 @@
         border: 1.593px solid #363D4D;
         background: linear-gradient(180deg, rgba(42, 52, 68, 0.90) 0%, rgba(25, 31, 38, 0.90) 100%);
         backdrop-filter: blur(5.972222328186035px);
+        position: relative;
+        top: 3rem;
       }
     
       .label {

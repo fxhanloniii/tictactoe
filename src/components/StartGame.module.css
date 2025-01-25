@@ -356,8 +356,10 @@
         height: 4.51388rem;
         flex-shrink: 0;
         border-radius: 0.45138rem;
-    border: 1.444px solid #363D4D;
-    background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+        border: 1.444px solid #363D4D;
+        background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+        margin-bottom: 0rem;
+        margin-top: 2rem;
     }
   
     .startText {
@@ -536,6 +538,7 @@
         border-radius: 0.49769rem;
         border: 1.593px solid #363D4D;
         background: linear-gradient(180deg, #2A3444 0%, #191F26 100%);
+        margin-top: 2rem;
     }
   
     .startText {
