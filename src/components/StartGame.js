@@ -9,7 +9,7 @@ import blueberryLogo from "../assets/blueberry.png";
 import { useNavigate } from "react-router-dom";
 
 export default function StartGame({ onStartGame }) {
-  const [opponent, setOpponent] = useState("PLAYER 2");
+  const [opponent, setOpponent] = useState("COMPUTER");
   const navigate = useNavigate();
   
 
