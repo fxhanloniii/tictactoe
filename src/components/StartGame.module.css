@@ -151,7 +151,7 @@
     text-transform: uppercase; 
     width: auto; 
     height: auto;
-    padding-top: 0.5rem;
+    
   }
 
   /* Pulse Animation */
@@ -603,5 +603,12 @@
         flex-shrink: 0;
         top: -0.5rem; 
         right: -0.25rem;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    .playerText {
+      padding-top: 0.5rem; /* Specific padding for iPads and larger screens */
     }
   }
