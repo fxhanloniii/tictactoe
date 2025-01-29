@@ -154,6 +154,27 @@
     padding-top: 0.5rem;
   }
 
+  /* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Add pulse class */
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
   .startButton {
     display: flex; 
     justify-content: center; 

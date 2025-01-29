@@ -197,7 +197,7 @@ export default function StartGame({ onStartGame }) {
 
 
             {/* Player Label */}
-            <div className={styles.playerLabel} onClick={toggleOpponent}>
+            <div className={`${styles.playerLabel} ${styles.pulse}`} onClick={toggleOpponent}>
                 <span className={styles.playerText}>{opponent}</span>
                 </div>
             </div>
